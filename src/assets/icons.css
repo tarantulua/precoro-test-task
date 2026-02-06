@@ -1,0 +1,63 @@
+.base-icon {
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  background-color: currentColor;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+
+.icon-buy {
+  -webkit-mask-image: url("./icons/buy.svg");
+  mask-image: url("./icons/buy.svg");
+}
+
+.icon-chevron-filled {
+  -webkit-mask-image: url("./icons/chevron-filled.svg");
+  mask-image: url("./icons/chevron-filled.svg");
+}
+
+.icon-chevron {
+  -webkit-mask-image: url("./icons/chevron.svg");
+  mask-image: url("./icons/chevron.svg");
+}
+
+.icon-help-center {
+  -webkit-mask-image: url("./icons/help-center.svg");
+  mask-image: url("./icons/help-center.svg");
+}
+
+.icon-onboarding {
+  -webkit-mask-image: url("./icons/onboarding.svg");
+  mask-image: url("./icons/onboarding.svg");
+}
+
+.icon-success {
+  -webkit-mask-image: url("./icons/success.svg");
+  mask-image: url("./icons/success.svg");
+}
+
+.icon-cross {
+  -webkit-mask-image: url("./icons/cross.svg");
+  mask-image: url("./icons/cross.svg");
+}
+
+.icon-mark {
+  -webkit-mask-image: url("./icons/mark.svg");
+  mask-image: url("./icons/mark.svg");
+}
+
+.icon-calendar {
+  -webkit-mask-image: url("./icons/calendar.svg");
+  mask-image: url("./icons/calendar.svg");
+}
+
+.icon-cancel {
+  -webkit-mask-image: url("./icons/cancel.svg");
+  mask-image: url("./icons/cancel.svg");
+}
