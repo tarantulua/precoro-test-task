@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Header from "./components/main/Header.vue";
-import ToastMessages from "./components/main/ToastMessages/ToastMessages.vue";
+import Header from "@/components/main/Header.vue";
+import ToastMessages from "@/components/main/ToastMessages/ToastMessages.vue";
 </script>
 
 <template>

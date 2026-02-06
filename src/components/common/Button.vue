@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import BaseIcon from "./BaseIcon.vue";
-import { ButtonShape, ButtonVariant } from "../../types/components";
+import { ButtonShape, ButtonVariant } from "@/types/components";
 
 interface ButtonProps {
   icon?: string;

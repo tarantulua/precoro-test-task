@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import type { DocumentApprovalData } from "../../../types/workers";
 import ApprovalStepRow from "./ApprovalStepRow.vue";
+import type { DocumentApprovalData } from "@/types/workers";
 
 interface DocumentApprovalTableProps {
   data: DocumentApprovalData[];

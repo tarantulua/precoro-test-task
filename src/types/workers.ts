@@ -1,4 +1,4 @@
-import type { Nullable } from "./common";
+import type { Nullable } from "@/types/common";
 
 export interface ApprovalStep {
   id: number;

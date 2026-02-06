@@ -1,8 +1,8 @@
 <script setup lang="ts">
+import BaseIcon from "@/components/common/BaseIcon.vue";
+import { useToastMessages } from "@/composables/useToastMessages";
+import type { ToastMessage } from "@/types/components";
 import { computed } from "vue";
-import type { ToastMessage } from "../../../types/components";
-import BaseIcon from "../../common/BaseIcon.vue";
-import { useToastMessages } from "../../../composables/useToastMessages";
 
 interface ToastMessageProps {
   toastMessage: ToastMessage;

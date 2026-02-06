@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useToastMessages } from "../../../composables/useToastMessages";
-import ToastMessage from "./ToastMessage.vue";
+import ToastMessage from "@/components/main/ToastMessages/ToastMessage.vue";
+import { useToastMessages } from "@/composables/useToastMessages";
 
 const { toastMessages } = useToastMessages();
 </script>

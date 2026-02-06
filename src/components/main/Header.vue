@@ -1,8 +1,8 @@
 <script setup lang="ts">
+import Button from "@/components/common/Button.vue";
+import Breadcrumbs from "@/components/main/Breadcrumbs.vue";
+import { ButtonShape, ButtonVariant } from "@/types/components";
 import { computed } from "vue";
-import Button from "../common/Button.vue";
-import Breadcrumbs from "./Breadcrumbs.vue";
-import { ButtonShape, ButtonVariant } from "../../types/components";
 
 const buttons = computed(() => {
   return [

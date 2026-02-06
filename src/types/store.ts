@@ -1,13 +1,7 @@
-import type { Nullable, Pagination } from "./common";
-import type { ToastMessage } from "./components";
-import type {
-  ApprovalDocument,
-  ApprovalStep,
-  BackupApprovers,
-  User,
-  UserWithoutFullname,
-  VacationMode,
-} from "./workers";
+import type { Nullable, Pagination } from "@/types/common";
+import type { ToastMessage } from "@/types/components";
+import type { ApprovalDocument, ApprovalStep, BackupApprovers, User, UserWithoutFullname, VacationMode } from "@/types/workers";
+
 
 export interface UsersStore {
   users: User[];

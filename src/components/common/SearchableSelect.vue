@@ -9,9 +9,9 @@ import {
   useTemplateRef,
   watch,
 } from "vue";
-import { useFloatingDropdown } from "../../composables/useFloatingDropdown";
 import BaseIcon from "./BaseIcon.vue";
 import LoadingSpinner from "./LoadingSpinner.vue";
+import { useFloatingDropdown } from "@/composables/useFloatingDropdown";
 
 interface SearchableSelectProps {
   id?: string;

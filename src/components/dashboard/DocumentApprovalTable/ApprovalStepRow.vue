@@ -1,10 +1,9 @@
 <script setup lang="ts">
+import { useUsers } from "@/composables/useUsers";
+import { useVacation } from "@/composables/useVacation";
+import type { ApprovalStep } from "@/types/workers";
+import type { UserSelectOption } from "@/types/common";
 import { computed } from "vue";
-import type { ApprovalStep } from "../../../types/workers";
-import { useUsers } from "../../../composables/useUsers";
-import { useVacation } from "../../../composables/useVacation";
-import UserSelect from "../UserSelect.vue";
-import type { UserSelectOption } from "../../../types/common";
 
 interface ApprovalStepRowProps {
   approvalStep: ApprovalStep;

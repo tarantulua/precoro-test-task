@@ -1,17 +1,17 @@
-import type { Nullable } from "../types/common";
-import { useWorkersApi } from "../api/useWorkersApi";
-import { defineStore } from "pinia";
-import type { VacationFormValue, VacationStore } from "../types/store";
-import type {
-  ApprovalDocument,
-  ApprovalStep,
-  UserWithoutFullname,
-  BackupApprovers,
-} from "../types/workers";
+import { useWorkersApi } from "@/api/useWorkersApi";
 import {
   convertVacationFormValueToDto,
   mapDocumentsData,
-} from "../helpers/dataHelper";
+} from "@/helpers/dataHelper";
+import type { Nullable } from "@/types/common";
+import type { VacationFormValue, VacationStore } from "@/types/store";
+import type {
+  ApprovalDocument,
+  ApprovalStep,
+  BackupApprovers,
+  UserWithoutFullname,
+} from "@/types/workers";
+import { defineStore } from "pinia";
 
 const initialFormValue: VacationFormValue = {
   vacationMode: {

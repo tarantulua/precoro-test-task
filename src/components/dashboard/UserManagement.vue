@@ -1,16 +1,15 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted } from "vue";
-import DocumentApprovalTable from "./DocumentApprovalTable/DocumentApprovalTable.vue";
-import { useUsers } from "../../composables/useUsers";
-import { useVacation } from "../../composables/useVacation";
-import UserSelect from "./UserSelect.vue";
-import type { UserSelectOption } from "../../types/common";
-import Button from "../common/Button.vue";
-import { ButtonShape } from "../../types/components";
-import InfoSection from "../common/InfoSection.vue";
-import StatusLabel from "../common/StatusLabel.vue";
-import RangeDatePicker from "../common/RangeDatePicker.vue";
-import LoadingSpinner from "../common/LoadingSpinner.vue";
+import { useUsers } from "@/composables/useUsers";
+import { useVacation } from "@/composables/useVacation";
+import InfoSection from "@/components/common/InfoSection.vue";
+import { ButtonShape } from "@/types/components";
+import Button from "@/components/common/Button.vue";
+import RangeDatePicker from "@/components/common/RangeDatePicker.vue";
+import StatusLabel from "@/components/common/StatusLabel.vue";
+import LoadingSpinner from "@/components/common/LoadingSpinner.vue";
+import DocumentApprovalTable from "@/components/dashboard/DocumentApprovalTable/DocumentApprovalTable.vue";
+import type { UserSelectOption } from "@/types/common";
 
 const { fetchUsers, users, pagination } = useUsers();
 const {
@@ -60,7 +59,6 @@ const date = computed({
 });
 
 const handleSubmitForm = async () => {
-  console.log("sumbit");
   await submitVacationForm();
 };
 

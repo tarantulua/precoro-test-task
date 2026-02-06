@@ -1,6 +1,6 @@
+import type { ToastMessage } from "@/types/components";
+import type { ToastMessagesStore } from "@/types/store";
 import { defineStore } from "pinia";
-import type { ToastMessagesStore } from "../types/store";
-import type { ToastMessage } from "../types/components";
 
 const DEFAULT_TOAST_DURATION = 5000;
 const DEFAULT_TOAST_TYPE = "success";

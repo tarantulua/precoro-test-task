@@ -1,7 +1,7 @@
-import type { Nullable } from "./../types/common";
-import type { VacationUpdateDto } from "../types/request";
-import type { VacationFormValue } from "../types/store";
-import type { ApprovalDocument, ApprovalStep } from "../types/workers";
+import type { Nullable } from "@/types/common";
+import type { VacationUpdateDto } from "@/types/request";
+import type { VacationFormValue } from "@/types/store";
+import type { ApprovalDocument, ApprovalStep } from "@/types/workers";
 
 export const mapDocumentsData = (
   approvalSteps: ApprovalStep[],

@@ -1,6 +1,6 @@
+import UserManagement from "@/components/dashboard/UserManagement.vue";
+import Dashboard from "@/pages/Dashboard.vue";
 import type { RouteRecordRaw } from "vue-router";
-import UserManagement from "../../components/dashboard/UserManagement.vue";
-import Dashboard from "../../pages/Dashboard.vue";
 
 const routes: RouteRecordRaw[] = [
   {

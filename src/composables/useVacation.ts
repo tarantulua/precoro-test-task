@@ -1,5 +1,5 @@
+import { useVacationStore } from "@/store/useVacationStore";
 import { storeToRefs } from "pinia";
-import { useVacationStore } from "../store/useVacationStore";
 
 export const useVacation = () => {
   const store = useVacationStore();

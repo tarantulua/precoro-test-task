@@ -1,5 +1,5 @@
+import { useUsersStore } from "@/store/useUsersStore";
 import { storeToRefs } from "pinia";
-import { useUsersStore } from "../store/useUsesrStore";
 
 export const useUsers = () => {
   const store = useUsersStore();

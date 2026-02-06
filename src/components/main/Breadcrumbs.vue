@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import BaseIcon from "@/components/common/BaseIcon.vue";
 import { computed } from "vue";
 import { useRoute } from "vue-router";
-import BaseIcon from "../common/BaseIcon.vue";
 
 const route = useRoute();
 
@@ -25,7 +25,7 @@ const breadcrumbs = computed(() => {
         {{ crumb.meta.breadcrumb }}
       </router-link>
 
-      <BaseIcon
+      <base-icon
         v-if="index < breadcrumbs.length - 1"
         class="item__separator"
         icon="chevron"

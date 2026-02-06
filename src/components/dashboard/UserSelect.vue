@@ -1,10 +1,10 @@
 <script setup lang="ts">
+import { useWorkersApi } from "@/api/useWorkersApi";
+import SearchableSelect from "@/components/common/SearchableSelect.vue";
+import type { Pagination, UserSelectOption } from "@/types/common";
+import type { FetchUserParams } from "@/types/request";
+import type { User } from "@/types/workers";
 import { computed, onWatcherCleanup, ref, watch } from "vue";
-import type { Pagination, UserSelectOption } from "../../types/common";
-import type { User } from "../../types/workers";
-import SearchableSelect from "../common/SearchableSelect.vue";
-import { useWorkersApi } from "../../api/useWorkersApi";
-import type { FetchUserParams } from "../../types/request";
 
 interface UserSelectProps {
   initialUsers: User[];

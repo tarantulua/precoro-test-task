@@ -1,9 +1,9 @@
-import { useWorkersApi } from "../api/useWorkersApi";
+import { useWorkersApi } from "@/api/useWorkersApi";
+import type { Pagination } from "@/types/common";
+import type { FetchUserParams } from "@/types/request";
+import type { UsersStore } from "@/types/store";
+import type { User } from "@/types/workers";
 import { defineStore } from "pinia";
-import type { UsersStore } from "../types/store";
-import type { FetchUserParams } from "../types/request";
-import type { User } from "../types/workers";
-import type { Pagination } from "../types/common";
 
 export const useUsersStore = defineStore("user", {
   state: (): UsersStore => ({

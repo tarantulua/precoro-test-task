@@ -1,5 +1,5 @@
+import { useToastMessagesStore } from "@/store/useToastMessagesStore";
 import { storeToRefs } from "pinia";
-import { useToastMessagesStore } from "../store/useToastMessagesStore";
 
 export const useToastMessages = () => {
   const store = useToastMessagesStore();
