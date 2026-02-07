@@ -14,6 +14,10 @@ html {
   --background-color-light: #eceefb;
 
   --default-transition-duration: 200ms;
+
+  --status-success-background: #e1f6e9;
+  --status-success-color: #00a338;
+  --status-success-color-light: #3fb34f;
 }
 
 body {
@@ -63,7 +67,7 @@ hr {
       color: var(--text-color-main);
 
       &.list__option--selected {
-        background-color: var(--background-color-light);
+        background-color: var(--status-success-background);
       }
 
       &:hover {

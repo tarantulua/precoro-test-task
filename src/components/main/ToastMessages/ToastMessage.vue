@@ -14,7 +14,7 @@ const ToastMessageTypeIcon = {
 };
 
 const ToastMessageTypeColor = {
-  success: "#3FB34F",
+  success: "var(--status-success-color-light)",
   error: "",
 };
 

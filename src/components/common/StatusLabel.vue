@@ -13,10 +13,10 @@ const { isEnabled, enabledText, disabledText } =
 
 const statusLabelSetting = computed(() => {
   return {
-    color: isEnabled ? "#00A338" : "#5E6A75",
+    color: isEnabled ? "var(--status-success-color)" : "#5E6A75",
     icon: isEnabled ? "mark" : "cross",
     text: isEnabled ? enabledText : disabledText,
-    background: isEnabled ? "#E1F6E9" : "#EEF0F6",
+    background: isEnabled ? "var(--status-success-background)" : "#EEF0F6",
   };
 });
 </script>
