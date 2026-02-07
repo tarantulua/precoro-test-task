@@ -20,7 +20,7 @@ const buttons = computed(() => {
 
 <template>
   <header class="site-header">
-    <Breadcrumbs />
+    <Breadcrumbs class="site-header__breadcrumbs" />
 
     <div class="site-header__buttons">
       <Button
@@ -51,6 +51,22 @@ const buttons = computed(() => {
     height: 100%;
     display: flex;
     gap: 0.25rem;
+  }
+
+  @media (max-width: 1024px) {
+    justify-content: end;
+
+    .site-header__breadcrumbs {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .site-header__buttons {
+      button:not(:last-child) {
+        display: none;
+      }
+    }
   }
 }
 </style>
