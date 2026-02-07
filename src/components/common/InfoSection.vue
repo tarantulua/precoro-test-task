@@ -52,7 +52,7 @@ const { title, text, direction = "row" } = defineProps<InfoSectionProps>();
       gap: 0.375rem;
       color: var(--text-color-main);
       font-weight: 600;
-      line-height: 1.4;
+      line-height: 1;
     }
 
     .info__text {

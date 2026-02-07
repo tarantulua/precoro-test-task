@@ -54,8 +54,6 @@ const buttonClass = computed(() => {
 
 <style scoped>
 .button {
-  --button-transition-duration: 200ms;
-
   height: 100%;
   outline: none;
   box-shadow: none;
@@ -69,7 +67,7 @@ const buttonClass = computed(() => {
   font-weight: 500;
   gap: 0.5rem;
 
-  transition: background-color var(--button-transition-duration) ease-in-out;
+  transition: background-color var(--default-transition-duration) ease-in-out;
 
   @media (hover: hover) {
     &:not(:disabled) {

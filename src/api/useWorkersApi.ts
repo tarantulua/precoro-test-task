@@ -16,7 +16,7 @@ export const useWorkersApi = () => {
       );
 
       if (!data?.ok) {
-        throw new Error("Server error");
+        throw new Error("Failed to fetch data");
       }
 
       return data;
@@ -38,7 +38,7 @@ export const useWorkersApi = () => {
       );
 
       if (!data?.ok) {
-        throw new Error("Server error");
+        throw new Error("Failed to fetch users");
       }
 
       return data;
@@ -56,7 +56,7 @@ export const useWorkersApi = () => {
       );
 
       if (!data?.ok) {
-        throw new Error("Server error");
+        throw new Error("Failed to update vacation");
       }
 
       addToastMessage({

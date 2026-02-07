@@ -12,6 +12,8 @@ html {
 
   --background-color-secondary: #9398c3;
   --background-color-light: #eceefb;
+
+  --default-transition-duration: 200ms;
 }
 
 body {
@@ -55,7 +57,8 @@ hr {
       padding: 0.5rem;
       font-size: 0.875rem;
       overflow: hidden;
-      transition: background-color 200ms ease-in-out;
+      transition: background-color var(--default-transition-duration)
+        ease-in-out;
 
       color: var(--text-color-main);
 
@@ -159,4 +162,14 @@ hr {
       border-bottom-color: var(--tooltip-background-color);
     }
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity var(--default-transition-duration) ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }

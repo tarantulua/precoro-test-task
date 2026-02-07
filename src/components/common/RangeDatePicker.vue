@@ -87,6 +87,7 @@ const clearValue = () => {
     border-radius: 0.3125rem;
     padding: 0.375rem 0.75rem;
     color: var(--text-color-main);
+    transition: border-color var(--default-transition-duration) ease-in-out;
 
     .input__value {
       font-size: 0.875rem;
@@ -96,14 +97,16 @@ const clearValue = () => {
       text-overflow: ellipsis;
       flex: 1;
       font-weight: 500;
+      color: var(--text-color-secondary);
 
       b {
         font-weight: 600;
+        color: var(--text-color-main);
       }
     }
 
     .input_clear {
-      transition: background-color 200ms ease-in-out;
+      transition: background-color var(--default-transition-duration) ease-in-out;
       @media (hover) {
         &:hover {
           background-color: black;
@@ -113,6 +116,12 @@ const clearValue = () => {
 
     .button {
       color: var(--border-color-input);
+    }
+
+    @media (hover) {
+      &:hover {
+        border-color: var(--border-color-input);
+      }
     }
   }
 

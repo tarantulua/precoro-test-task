@@ -192,7 +192,7 @@ onUnmounted(() => {
       />
 
       <Teleport to="#modal-container">
-        <Transition>
+        <Transition name="fade">
           <div
             v-if="isOpen"
             class="searchable-select__dropdown"
@@ -268,6 +268,7 @@ onUnmounted(() => {
     padding: 0.375rem 0.5rem;
     border-radius: 0.5rem;
     background: #fff;
+    cursor: pointer;
 
     .searchable-select__input {
       outline: none;
@@ -277,6 +278,7 @@ onUnmounted(() => {
       color: var(--text-color-main);
       line-height: 144%;
       background: transparent;
+      cursor: pointer;
 
       &::placeholder {
         opacity: 0.75;
@@ -285,7 +287,7 @@ onUnmounted(() => {
 
     .searchable-select__mark {
       color: var(--text-color-main);
-      transition: transform 200ms ease-in-out;
+      transition: transform var(--default-transition-duration) ease-in-out;
 
       &.searchable-select__mark--open {
         transform: rotate(180deg);

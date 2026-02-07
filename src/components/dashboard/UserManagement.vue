@@ -102,6 +102,7 @@ onUnmounted(() => {
     </InfoSection>
 
     <InfoSection
+      class="user-management__vacation"
       title="Vacation mode"
       text="Select Date, Substitute User and Backup Approver to Enable Vacation Mode."
     >
@@ -123,6 +124,7 @@ onUnmounted(() => {
     <hr class="user-management__line" />
 
     <InfoSection
+      class="user-management__substitute"
       title="Substitute User"
       text="Performs approval actions while you are away."
     >
@@ -141,6 +143,7 @@ onUnmounted(() => {
     <hr class="user-management__line" />
 
     <InfoSection
+      class="user-management__approver"
       title="Backup Approver"
       text="Performs approval actions while you are away. Below, you can select the necessary Approvers."
       direction="column"
@@ -180,6 +183,22 @@ onUnmounted(() => {
         font-size: 1.25rem;
       }
     }
+  }
+
+  .user-management__vacation {
+    &:deep(.info-section__info) {
+      .info__title {
+        line-height: 1.44;
+      }
+    }
+  }
+
+  .user-management__substitute {
+    padding-top: 1rem;
+  }
+
+  .user-management__approver {
+    padding-top: 1.25rem;
   }
 
   .user-management__date {

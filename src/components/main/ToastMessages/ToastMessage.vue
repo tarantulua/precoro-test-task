@@ -109,7 +109,7 @@ const handleRemoveClick = () => {
     background: none;
     outline: none;
     cursor: pointer;
-    transition: background-color 200ms ease-in-out;
+    transition: background-color var(--default-transition-duration) ease-in-out;
     font-size: 0.625rem;
     line-height: 1.2;
     color: var(--text-color-secondary);

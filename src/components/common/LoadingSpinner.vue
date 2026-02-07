@@ -61,14 +61,4 @@ const { size = 1.75, isShown } = defineProps<LoadingSpinnerProps>();
     transform: rotate(360deg);
   }
 }
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 200ms ease-in-out;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
 </style>

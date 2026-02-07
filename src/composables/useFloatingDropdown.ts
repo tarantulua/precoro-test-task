@@ -20,7 +20,6 @@ export function useFloatingDropdown(
       width: `${rect.width}px`,
       top: showAbove ? `${rect.top - dropdownHeight}px` : `${rect.bottom}px`,
       zIndex: "9999",
-      background: "#fff",
       border: "1px solid var(--border-color-input)",
       borderTop: showAbove ? "1px solid var(--border-color-input)" : "none",
       borderBottom: showAbove ? "none" : "1px solid var(--border-color-input)",

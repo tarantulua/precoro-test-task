@@ -48,7 +48,7 @@ const statusLabelSetting = computed(() => {
   font-weight: 500;
   line-height: 0.625rem;
   transition:
-    background-color 200ms ease-in,
-    color 200ms ease-in;
+    background-color var(--default-transition-duration) ease-in-out,
+    color var(--default-transition-duration) ease-in-out;
 }
 </style>
