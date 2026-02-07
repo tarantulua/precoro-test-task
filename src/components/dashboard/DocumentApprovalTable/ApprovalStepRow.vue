@@ -4,6 +4,7 @@ import { useVacation } from "@/composables/useVacation";
 import type { ApprovalStep } from "@/types/workers";
 import type { UserSelectOption } from "@/types/common";
 import { computed } from "vue";
+import UserSelect from "@/components/dashboard/UserSelect.vue";
 
 interface ApprovalStepRowProps {
   approvalStep: ApprovalStep;

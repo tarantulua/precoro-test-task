@@ -10,6 +10,7 @@ import StatusLabel from "@/components/common/StatusLabel.vue";
 import LoadingSpinner from "@/components/common/LoadingSpinner.vue";
 import DocumentApprovalTable from "@/components/dashboard/DocumentApprovalTable/DocumentApprovalTable.vue";
 import type { UserSelectOption } from "@/types/common";
+import UserSelect from "@/components/dashboard/UserSelect.vue";
 
 const { fetchUsers, users, pagination } = useUsers();
 const {
