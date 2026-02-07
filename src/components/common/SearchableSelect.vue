@@ -43,7 +43,7 @@ const emit = defineEmits(["load-more"]);
 
 const isOpen = ref<boolean>(false);
 const container = useTemplateRef("searchable-select-container");
-const dropdownContainer = useTemplateRef("dropdown-container");
+const listContainer = useTemplateRef("list-container");
 const lastListElement = useTemplateRef("last-list-element");
 
 const { dropdownStyles, updatePosition } = useFloatingDropdown(
@@ -108,11 +108,11 @@ const handleSetupObserver = () => {
 };
 
 const scrollToTop = () => {
-  if (!dropdownContainer.value) {
+  if (!listContainer.value) {
     return;
   }
 
-  dropdownContainer.value.scrollTop = 0;
+  listContainer.value.scrollTop = 0;
 };
 
 const setupListeners = () => {
@@ -196,7 +196,6 @@ onUnmounted(() => {
           <div
             v-if="isOpen"
             class="searchable-select__dropdown"
-            ref="dropdown-container"
             :style="dropdownStyles"
             @click.stop
           >
@@ -205,6 +204,7 @@ onUnmounted(() => {
               :style="{
                 maxHeight: `${maxDropdownHeight}rem`,
               }"
+              ref="list-container"
             >
               <template v-if="options.length">
                 <li
