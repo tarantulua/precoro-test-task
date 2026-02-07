@@ -32,5 +32,6 @@ export const useVacation = () => {
     changeSubstituteUser: store.changeSubstituteUser,
     changeVacationMode: store.changeVacationMode,
     submitVacationForm: store.submitVacationForm,
+    changeUiFlag: store.changeUiFlag,
   };
 };

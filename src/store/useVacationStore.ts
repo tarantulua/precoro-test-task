@@ -171,6 +171,13 @@ export const useVacationStore = defineStore("vacation", {
       this.formValue = newValue;
     },
 
+    changeUiFlag(key: keyof typeof this.uiFlags, value: boolean) {
+      this.uiFlags = {
+        ...this.uiFlags,
+        [key]: value,
+      };
+    },
+
     async submitVacationForm() {
       if (!this.getIsFormValid) {
         return;
@@ -184,9 +191,9 @@ export const useVacationStore = defineStore("vacation", {
 
       const { updateVacation } = useWorkersApi();
 
-      this.uiFlags = { ...this.uiFlags, isFormSubmitting: true };
+      this.changeUiFlag("isFormSubmitting", true);
       const result = await updateVacation(dto);
-      this.uiFlags = { ...this.uiFlags, isFormSubmitting: false };
+      this.changeUiFlag("isFormSubmitting", false);
 
       if (!result) {
         return;
